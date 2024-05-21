@@ -392,6 +392,20 @@ summary> img{
     .features-desktop-list:hover > .features-desktop-dropdown, .company-desktop-list:hover > .company-desktop-dropdown{
         display: block;
     }
+
+    .features-desktop-list > a >  .arrow-down-desktop, .company-desktop-list > a > .arrow-down-desktop{
+        transition: 0.5s ease;
+    }
+
+    .features-desktop-list:hover > a > .arrow-down-desktop{
+        transition: 0.5s ease;
+        transform: rotate(180deg);
+    }
+
+    .company-desktop-list:hover > a > .arrow-down-desktop{
+        transition: 0.5s ease;
+        transform: rotate(180deg);
+    }
 /* HEADER FEATURES DAN COMPANY DROPDOWN LIST */
 
     .right-header{
