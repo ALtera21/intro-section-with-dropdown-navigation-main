@@ -114,6 +114,7 @@ body{
 .mobile-ul{
     margin-top: 70px;
     padding-left: 20px;
+    outline: none;
 }
 
 .mobile-ul li :active{
