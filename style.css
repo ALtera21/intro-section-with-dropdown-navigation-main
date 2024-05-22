@@ -3,10 +3,14 @@
 /* font-family: "Epilogue", sans-serif; */
 
 /* DESKTOP DELETE DISPLAY */
-header, .snap-desktop, .container, .learn-more-desktop{
+header, .snap-desktop, .container, .learn-more-desktop-button{
     display: none;
 }
 /* DESKTOP DELETE DISPLAY */
+
+.attribution{
+    margin-top: 2px;
+}
 
 *{
     margin: 0;
@@ -280,6 +284,10 @@ summary> img{
     }
 /* MOBILE DELETE DISPLAY */
 
+    .attribution{
+        margin-top: 20px;
+    }
+
 /* HEADER */
     header{
         position: fixed;
@@ -331,7 +339,7 @@ summary> img{
 
     .desktop-ul > .features-desktop-list > a > img {
         margin-left: 5px
-    };
+    }
 
     .desktop-ul > .company-desktop-list > a {
         display: flex;
@@ -418,8 +426,6 @@ summary> img{
     .login-desktop, .register-desktop{
         color: hsl(0, 0%, 41%);
         background-color: white;
-        /* padding-left: 20px;
-        padding-right: 20px; */
         padding-top: 10px;
         padding-bottom: 10px;
         width: 45%;
@@ -459,7 +465,7 @@ summary> img{
         z-index: -1;
     }
 
-    .title-desktop, .description-desktop, .learn-more-desktop , .footer-desktop{
+    .title-desktop, .description-desktop , .footer-desktop{
         position: absolute;
         z-index: -1;
     }
@@ -476,22 +482,23 @@ summary> img{
         font-size: 20px;
     }
     
-    .learn-more-desktop{
-        left: 11%;
-        top: 65%;
+    .learn-more-desktop-button{
+        display: block;
+        position: fixed;
+        bottom: 30%;
+        left: 150px;
         width: 150px;
         height: 40px;
         border-radius: 10px;
         color: white;
         background-color: black;
         border: none;
-        z-index: 0;
     }
-    
-    .learn-more-desktop:hover{
+
+    .learn-more-desktop-button:hover{
         background-color: white;
         color: black;
-        border: 2px solid black;
+        border: 2px solid black
     }
     
     .footer-desktop{
@@ -550,6 +557,24 @@ summary> img{
         width: 85%;
     }
 
+    .desktop-ul > .features-desktop-list > a > img {
+        margin-left: 1px;
+    }
+
+    .desktop-ul > .company-desktop-list > a > img {
+        margin-left: 1px;
+    }
+
+    .company-desktop-dropdown{    
+        left: 40%;
+        width: 110px;
+        height: 125px;
+    }
+
+    .login-desktop, .register-desktop{
+        font-size: 10px;
+    }
+
     .right-header{
         width: 20%;
     }
@@ -558,8 +583,9 @@ summary> img{
         font-size: 16px;
     }
 
-    .learn-more-desktop{
-        top: 80%;
+    .learn-more-desktop-button{
+        bottom: 20%;
+        left: 10px;
     }
 
     .footer-desktop{
